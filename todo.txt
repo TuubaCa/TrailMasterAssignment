@@ -1,0 +1,71 @@
+ToDo-List:
+
+1. Start
+
+Vi ska skapa ett Maven-projekt och lägga till nödvändiga beroenden (JUnit, JaCoCo, Mockito).
+Vi kommer att planera klasserna TrailRun, RunManager, och User, och diskutera deras ansvar och interaktioner.
+Vi ska tänka på hur vi ska implementera funktionerna med TDD och dokumentera varje steg i TDD-dagboken.
+
+2. TrailRun
+
+Vi ska lägga till attributen:
+Distans (km), Tid (sekunder), och Datum (LocalDate).
+Vi ska implementera metoder för att:
+Beräkna medelhastighet (hastighet=distanstid)(hastighet=tiddistans​).
+Beräkna kilometertid (kilometertid=tiddistans)(kilometertid=distanstid​).
+Vi kommer att skriva tester i TrailRunTest:
+Kontrollera att attributen sparas korrekt.
+Verifiera beräkningarna av medelhastighet och kilometertid.
+Säkerställa att standarddatum används om inget datum anges.
+Vi ska reflektera över eventuella svårigheter och hur vi löser dem.
+
+3. RunManager
+
+Vi ska implementera metoder för att hantera flera TrailRun-objekt:
+Lägga till löprundor med unika ID.
+Ta bort löprundor baserat på ID.
+Hämta löprundor baserat på ID.
+Vi ska lägga till funktioner för:
+Räkna dagar sedan senaste löprundan.
+Beräkna total distans och medeldistans.
+Vi kommer att testa funktionerna i RunManagerTest:
+Säkerställa att metoderna fungerar som förväntat.
+Kontrollera hantering av felaktiga ID.
+Vi ska beskriva vårt tänkande i TDD-dagboken, särskilt hur vi itererar mellan test och kod.
+
+4. User
+
+Vi ska lägga till användarens attribut:
+Längd (cm), Vikt (kg), och Ålder (år).
+Vi ska implementera fitness score-formeln:FitnessScore=CS+(d+vp)−t2FitnessScore=CS+(d+pv​)−2t​
+Där:
+CS=Nuvarande poa¨ngCS=Nuvarande poa¨ng,
+d=Distans (km)d=Distans (km),
+v=Medelhastighet (km/h)v=Medelhastighet (km/h),
+p=Kilometertid (min/km)p=Kilometertid (min/km),
+t=Dagar sedan senaste lo¨prundant=Dagar sedan senaste lo¨prundan.
+Vi ska skriva tester i UserTest:
+Kontrollera att fitness score beräknas korrekt.
+Säkerställa att fitness score inte kan vara negativt.
+Vi ska dokumentera hur vi resonerar kring formeln och testerna.
+
+5. Refaktorisering och Dokumentation
+
+Vi ska förbättra kodens struktur och läsbarhet:
+Ta bort duplicerad kod.
+Lägg till tydliga kommentarer.
+Vi ska generera en JaCoCo-rapport och säkerställa hög kodtäckning.
+Vi ska skapa en README.md-fil:
+Beskriva projektets syfte och funktioner.
+Förklara hur man kör projektet och vad som ingår.
+
+6. Leverans
+
+Vi ska granska hela projektet och säkerställa att alla tester är gröna.
+Vi ska packa projektet som en zip-fil eller ladda upp det till Github.
+Vi ska leverera projektet tillsammans med:
+En detaljerad TDD-dagbok.
+JaCoCo-rapporten.
+
+
+
